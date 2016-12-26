@@ -1,0 +1,17 @@
+version: '2'
+services:
+  dtmongo:
+    image: mongo:3.4
+    volumes:
+      - ./dtmongo:/data/db
+    ports:
+      - 27017:27017
+    expose:
+      - 27017
+  dtpython:
+    image: kd/mypy:latest
+    volumes:
+      - .:/data
+    entrypoint:
+      - python3
+      - app.py
