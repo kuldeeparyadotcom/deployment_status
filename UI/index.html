@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Live Deployment Status</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,7 +12,34 @@
 
 <div class="container">
   <h1>SIT Deployment Status</h1>
-  <p>Bookmark this page to view the live status of SIT Deployments</p> 
+  <p>Bookmark this page to view the <mark> live status </mark>of <abbr title="App Dev SIT Environment">SIT </abbr>Deployments</p> 
+
+  <div class="row">
+    <div class="col-sm-6" style="background-color:lavender;">Activity Description</div>
+    <div class="col-sm-2" style="background-color:lavender;">Current Status</div>
+    <div class="col-sm-2" style="background-color:lavender;"><abbr title="Estimated Completion Time">ECT</abbr></div>
+    <div class="col-sm-2" style="background-color:lavender;"><abbr title="Actual Completion Time">ACT</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="background-color:white;">Lock all Bitbucket Repos to block any new commit</div>
+    <div class="col-sm-2 bg-success text-uppercase">completed</div>
+    <div class="col-sm-2" style="background-color:white;">2:30 PM CST</div>
+    <div class="col-sm-2" style="background-color:white;">2:30 PM CST</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="background-color:white;">Apply DB Scripts over SIT Database</div>
+    <div class="col-sm-2 bg-danger text-uppercase">delayed</div>
+    <div class="col-sm-2" style="background-color:white;">2:30 PM CST</div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6" style="background-color:white;">UI build triggered</div>
+    <div class="col-sm-2 bg-info text-uppercase">in progress</div>
+    <div class="col-sm-2" style="background-color:while;">3:15 PM CST</div>
+  </div>
+
 </div>
 
 </body>
