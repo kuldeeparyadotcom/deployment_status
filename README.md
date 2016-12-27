@@ -18,3 +18,8 @@ docker build -t kd/mypy:latest .
 
 #Mount program directory and run disposable container in interactive mode
 docker run --rm -it -v $(PWD):/data kd/mypy:latest /bin/bash
+
+
+#Set up httpd Docker Container
+#Pay attention to volumes that you mount in below command
+docker run --name dthttpd -v $(PWD):/usr/local/apache2/htdocs -P -d httpd:2.4
